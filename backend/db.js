@@ -4,7 +4,6 @@ var MongoClient = require("mongodb").MongoClient;
 require("dotenv").config();
 const mongoURI = process.env.MONGO_URI;
 
-// "mongodb://2021kucp1090:1090@ac-pmjeris-shard-00-00.7nrc6wr.mongodb.net:27017,ac-pmjeris-shard-00-01.7nrc6wr.mongodb.net:27017,ac-pmjeris-shard-00-02.7nrc6wr.mongodb.net:27017/Incognito?ssl=true&replicaSet=atlas-r4qj6u-shard-0&authSource=admin&retryWrites=true&w=majority";
 
 const mongoDB = async () => {
   await mongoose.connect(
